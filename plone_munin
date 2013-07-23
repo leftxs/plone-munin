@@ -8,7 +8,7 @@ import re
 import sys
 import subprocess
 
-users = os.environ.get('users') or 'plone,zope'
+users = os.environ.get('users') or 'zopeuser'
 category = os.environ.get('category') or 'plone'
 
 ps_command = 'ps -ww -o rss= -o command= -U %s' % users
